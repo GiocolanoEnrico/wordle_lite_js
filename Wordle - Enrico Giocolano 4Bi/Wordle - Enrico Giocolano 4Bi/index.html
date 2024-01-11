@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Wordle</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+    </html>
+    <body id="anatomy">
+        <div id="game">
+            <h1 class="title"> WORDLE <i>light</i></h1>
+            <form>
+                <input type="text" class="in" id="l00" name="l00" maxlength="1" required="required" autofocus="autofocus" />
+                <input type="text" class="in" id="l10" name="l10" maxlength="1" required="required" />
+                <input type="text" class="in" id="l20" name="l20" maxlength="1" required="required" />
+                <input type="text" class="in" id="l30" name="l30" maxlength="1" required="required" />
+                <input type="text" class="in" id="l40" name="l40" maxlength="1" required="required" />
+                <input type="button" class="but" id="check" name="check" value="check" onclick="wordle()" />
+                <output id="out0"></output>
+            </form>
+            <output id="out"></output>
+            <h2 class="title">Regole</h2>
+            <div id="rules">
+                <p>
+                    Lo scopo di Wordle è indovinare una <strong>parola Italiana di 5 lettere</strong>, avendo a disposizione <strong>6 tentativi</strong>. Le regole da conoscere sono poche e molto semplici.
+                    Ogni volta che si inserisce una parola di 5 lettere di senso compiuto in italiano nella griglia, le caselle ruotano e diventano di uno di questi tre colori:
+                    <ul>
+                        <li>Verde : la lettera corrispondente è presente nella parola da indovinare ed è nella posizione giusta;</li>
+                        <li>Giallo : la lettera corrispondente è presente nella parola da indovinare, ma occupa un’altra posizione rispetto a quella attuale;</li>
+                        <li>Rosso : la lettera corrispondente non è presente nella parola da indovinare.</li>
+                        <li>Bianco : Hai aggiunto una lettera gia inserità in una posizione corretta più delle volte necessarie</li>
+                    </ul>
+                </p>
+            </div>
+            <p><i>Note del programmatore</i>:</p>
+            <p>
+                <ul>
+                    <li>Il gioco viene chiamato <strong>Wordle light</strong> perché esso dispone di un quarto colore quale il bianco.</li>
+                    <li>Nel caso si volesse vedere la parola scelta dal computer si consiglia di aprire la console dei comandi, essa possibilità è consiglita solo nel caso si avesse perso la partita.</li>
+                    <li>facendo resettare il gioco si resetteranno anche le impostazioni di grafica quali la sottostante <i>Modalità Notturna</i>.</li>
+                    <li>Le parole sono state trovate al seguemte sito <a href="https://it.worder.cat/ricercaparole/NQ">Cliccami</a> Esse però sono stranamente solo dalla A alla C</li>
+                    <li>Non si consiglia d premere il pulsante <i>Contatta Sviluppatore</i></li>
+                </ul>
+            </p>
+            <hr />
+            <input type="button" class="but" value="Rigioca" onclick="refresh()" />
+            <input type="button" class="but" value="Modalità Notturna" onclick="mod()" />
+            <input type="button" class="but" value="Contatta Sviluppatore" onclick="RickRoll()" />
+        </div>
+        <script src="js/script.js"></script>
+        <script src="js/utility.js"></script>
+    </body>
+    </body>
+</html>

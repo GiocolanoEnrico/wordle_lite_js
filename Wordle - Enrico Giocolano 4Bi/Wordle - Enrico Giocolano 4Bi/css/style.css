@@ -1,0 +1,41 @@
+body{
+    display : flex;
+    flex-direction : column;
+    flex-grow : 1;
+    background-color : #ffffff;
+    font-family : monospace;
+    font-size: large;
+}
+/*riquadro che compone il il gioco*/
+#game{
+    border: 2px solid #000000;
+    padding : 10%;
+    margin : 2% 7%;
+    width : lem;
+    height : lem;
+    box-shadow: 10px 10px #845eff;
+}
+/*caselle di input*/
+.in{
+    text-align : center;
+    border-color : #000000;
+    border-radius: 0%;
+}
+/*casella di input, nello specifico il bottone di invio*/
+.but{
+    border : 2px solid #000000;
+    background-color: #ffffff ;
+}
+/*high light del bottone di invio*/
+.but:hover{
+    background-color : #845eff;
+}
+/*titoli*/
+.title{
+    font-size: 500%;
+}
+/*effetto dei titoli qunado ci coperti dal cursore*/
+.title:hover{
+    text-shadow: .1em .1em 0 #845eff;
+}
+
