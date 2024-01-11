@@ -171,7 +171,7 @@ function wordle(){
                     let id1 = "l" + i + chance;
                     out.innerHTML += "<input type=\"text\" class=\"in\" id=" + id1 + " name=" + id1 + " maxlength=\"1\" required=\"required\" />";
                     if(i == 4){
-                        out.innerHTML += "<input type=\"button\" class=\"but\" value=\"check\" onclick=\"wordle() \">";
+                        out.innerHTML += "<input type=\"button\" class=\"but\" value=\"check\" onclick=\"wordle() \"><br />";
                     }
                 }
                 out.innerHTML += "<output id=" + outId0 + "></output>";
