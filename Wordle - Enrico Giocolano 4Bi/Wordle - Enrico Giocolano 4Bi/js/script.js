@@ -165,11 +165,11 @@ function wordle(){
                 let id00 = "l" + 0 + chance;
                 let outId0 = "out" + chance;
                 console.log("id dell\' output : " + outId0);
-                out.innerHTML += "<input type=\"text\" class=\"in\" id=" + id00 + " name=" + id00 + " maxlength=\"1\" required=\"required\" />";
+                out.innerHTML += "<input type=\"text\" class=\"in\" id=" + id00 + " name=" + id00 + " maxlength=\"1\" required=\"required\" /><br />";
                 
                 for(let i = 1; i < 5; i++){
                     let id1 = "l" + i + chance;
-                    out.innerHTML += "<input type=\"text\" class=\"in\" id=" + id1 + " name=" + id1 + " maxlength=\"1\" required=\"required\" />";
+                    out.innerHTML += "<input type=\"text\" class=\"in\" id=" + id1 + " name=" + id1 + " maxlength=\"1\" required=\"required\" /> <br />";
                     if(i == 4){
                         out.innerHTML += "<input type=\"button\" class=\"but\" value=\"check\" onclick=\"wordle() \"><br />";
                     }
